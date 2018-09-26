@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Kidsquiz105s</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @kidsquiz105s.each do |kidsquiz105| %>
+      <tr>
+        <td><%= kidsquiz105.category %></td>
+        <td><%= link_to 'Show', kidsquiz105 %></td>
+        <td><%= link_to 'Edit', edit_kidsquiz105_path(kidsquiz105) %></td>
+        <td><%= link_to 'Destroy', kidsquiz105, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Kidsquiz105', new_kidsquiz105_path %>

@@ -1,0 +1,2 @@
+class Kidsquiz < ApplicationRecord
+end

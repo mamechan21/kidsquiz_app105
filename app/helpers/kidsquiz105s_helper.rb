@@ -1,0 +1,2 @@
+module Kidsquiz105sHelper
+end
